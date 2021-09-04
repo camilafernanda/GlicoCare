@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@id/edit_email"
     />
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_entrar"
         style="@style/Button"
         android:text="@string/entrar"
@@ -90,5 +90,5 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-</android.support.constraint.ConstraintLayout>
-</android.support.v4.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

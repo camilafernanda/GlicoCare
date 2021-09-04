@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068560423550",
+    "project_id": "glicocare",
+    "storage_bucket": "glicocare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068560423550:android:0a18f8dc16430c6ca4562f",
+        "android_client_info": {
+          "package_name": "com.example.glicocare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068560423550-eod5ok74oji2ldd6soev433u9pebpqtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfEHdKUreHD_zRt_zgGUQeZa1DK_vLeM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068560423550-eod5ok74oji2ldd6soev433u9pebpqtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
