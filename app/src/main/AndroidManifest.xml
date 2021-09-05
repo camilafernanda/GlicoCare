@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GlicoCare">
         <activity
+            android:name=".TelaPrincipalProfissional"
+            android:exported="true" />
+        <activity
+            android:name=".FormCadastroProfissional"
+            android:exported="true" />
+        <activity
+            android:name=".FormTipoUsuario"
+            android:exported="true" />
+        <activity
             android:name=".TelaPrincipal"
             android:exported="true" />
         <activity

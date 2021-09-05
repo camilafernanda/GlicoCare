@@ -2,7 +2,7 @@ package com.example.glicocare;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-//import android.support.v7.app.AppCompatActivity;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,9 +26,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FormCadastro extends AppCompatActivity {
+public class FormCadastroProfissional extends AppCompatActivity {
 
-    private EditText edit_nome,edit_email,edit_password;
+    private EditText edit_nome,edit_email,edit_password, edit_crm;
     private Button bt_cadastrar;
     String[] mensagens = {"Preencha todos os campos, por favor!","Cadastro realizado com sucesso!"};
     String usuarioID;
@@ -36,7 +36,7 @@ public class FormCadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form_cadastro);
+        setContentView(R.layout.activity_form_cadastro_profissional);
 
         getSupportActionBar().hide();
         IniciarComponentes();
@@ -48,8 +48,9 @@ public class FormCadastro extends AppCompatActivity {
                 String nome = edit_nome.getText().toString();
                 String email = edit_email.getText().toString();
                 String password = edit_password.getText().toString();
+                String crm = edit_crm.getText().toString();
 
-                if(nome.isEmpty() || email.isEmpty() || password.isEmpty()){
+                if(nome.isEmpty() || email.isEmpty() || password.isEmpty() || crm.isEmpty()){
                     Snackbar snackbar = Snackbar.make(view,mensagens[0],Snackbar.LENGTH_SHORT);
                     snackbar.setActionTextColor(Color.BLACK);
                     snackbar.show();
@@ -96,13 +97,15 @@ public class FormCadastro extends AppCompatActivity {
         });
     }
 
-    private void SalvarDadosUsuario(){
+    private void SalvarDadosUsuario() {
         String nome = edit_nome.getText().toString();
+        String crm = edit_crm.getText().toString();
 
         FirebaseFirestore database = FirebaseFirestore.getInstance();
 
-        Map<String,Object> usuarios = new HashMap<>();
-        usuarios.put("nome",nome);
+        Map<String, Object> usuarios = new HashMap<>();
+        usuarios.put("nome", nome);
+        usuarios.put("crm", crm);
 
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
@@ -113,18 +116,19 @@ public class FormCadastro extends AppCompatActivity {
                 Log.d("database", "Sucesso ao salvar os dados!");
             }
         })
-          .addOnFailureListener(new OnFailureListener() {
-             @Override
-             public void onFailure(@NonNull Exception e) {
-                 Log.d("database_error", "Erro ao salvar os dados" + e.toString());
-             }
-          });
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d("database_error", "Erro ao salvar os dados" + e.toString());
+                    }
+                });
     }
 
     private void IniciarComponentes(){
-        edit_nome = findViewById(R.id.edit_nome);
-        edit_email = findViewById(R.id.edit_email);
-        edit_password = findViewById(R.id.edit_password);
-        bt_cadastrar = findViewById(R.id.bt_cadastrar);
+        edit_nome = findViewById(R.id.edit_nome_profissional);
+        edit_email = findViewById(R.id.edit_email_profissional);
+        edit_password = findViewById(R.id.edit_password_profissional);
+        edit_crm = findViewById(R.id.edit_crm);
+        bt_cadastrar = findViewById(R.id.bt_cadastrar_profissional);
     }
 }

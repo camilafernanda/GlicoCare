@@ -3,4 +3,5 @@
     <string name="entrar">Entrar</string>
     <string name="text_cadastro">Criar conta</string>
     <string name="title_cadastro">Cadastre-se</string>
+    <string name="title_cadastro_profissional">Cadastro Profissional da Saúde</string>
 </resources>
