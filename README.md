@@ -4,6 +4,12 @@
 
 Projeto em desenvolvimento para disciplina Instrumentação Biomédica II do curso de Engenharia Biomédica.
 
+## Descrição:
+
+Sistema de telemonitoramento domiciliar para a atenção especializada de pessoas acometidas por diabetes mellitus.
+
+O sistema permitirá o monitoramento diário, contínuo e remoto do nível de glicose no sangue (glicemia), possibilitando que familiares, cuidadores, profissionais da saúde ou o próprio paciente acompanhem o estado clínico do mesmo.
+
 ###
 
 ## Integrantes:
@@ -27,24 +33,26 @@ Projeto em desenvolvimento para disciplina Instrumentação Biomédica II do cur
 
 ## Telas desenvolvidas:
 
-Login:
+<div align="center">
+  
+**Login:**
 
 ![Tela de login GlicoCare.](https://user-images.githubusercontent.com/37356058/131255760-bad42c15-a04c-43fc-a30c-128c22d42384.png)
 
-Tipo de usuário:
+**Tipo de usuário:**
 
 ![Tela de tipo de usuário: paciente e profissional da saúde.](https://user-images.githubusercontent.com/37356058/132268890-23fade96-b781-47da-8d60-edd5d05425ae.png)
 
-Cadastro Paciente:
+**Cadastro Paciente:**
 
 ![Tela de Cadastro do paciente GlicoCare.](https://user-images.githubusercontent.com/37356058/131255777-2e369bf0-6fba-429e-b8b5-be3437d5e3b4.png)
 
-Cadastro Profissional de Saúde:
+**Cadastro Profissional de Saúde:**
 
 ![Tela de Cadastro do profissional de saúde GlicoCare.](https://user-images.githubusercontent.com/37356058/132269051-9477f095-b122-44bd-b6b9-4cbbda848a16.png)
 
-Tela Principal Usuário:
+**Tela Principal Usuário:**
 
 ![Tela de Usuário GlicoCare.](https://user-images.githubusercontent.com/37356058/131255822-0333b313-6d68-45ef-aaa7-22c21a07aee9.png)
-
+</div>
 
