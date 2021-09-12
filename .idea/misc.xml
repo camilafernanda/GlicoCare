@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/drawable/ic_blood.xml" value="0.2203125" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/drawable/ic_help.xml" value="0.2203125" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_cadastro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_cadastro_profissional.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_login.xml" value="0.25" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_tipo_usuario.xml" value="0.2" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_help.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_tela_perfil_profissional.xml" value="0.1" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_tela_principal.xml" value="0.22" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_tela_principal_profissional.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/menu/menu_tela_principal.xml" value="0.2" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare2/app/src/main/res/drawable/background.xml" value="0.1125" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare2/app/src/main/res/drawable/button.xml" value="0.15416666666666667" />

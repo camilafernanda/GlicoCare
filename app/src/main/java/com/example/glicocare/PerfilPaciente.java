@@ -2,7 +2,7 @@ package com.example.glicocare;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
+//import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,18 +16,17 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-public class TelaPrincipalProfissional extends AppCompatActivity {
+public class PerfilPaciente extends AppCompatActivity {
 
-    private TextView nomeUsuario,emailUsuario, crm;
+    private TextView nomeUsuario,emailUsuario;
     private Button bt_deslogar;
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     String usuarioID;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_principal_profissional);
+        setContentView(R.layout.activity_perfil_paciente);
 
         getSupportActionBar().hide();
         IniciarComponentes();
@@ -36,7 +35,7 @@ public class TelaPrincipalProfissional extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(TelaPrincipalProfissional.this,FormLogin.class);
+                Intent intent = new Intent(PerfilPaciente.this,FormLogin.class);
                 startActivity(intent);
                 finish();
             }
@@ -56,7 +55,6 @@ public class TelaPrincipalProfissional extends AppCompatActivity {
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
                 if(documentSnapshot != null){
                     nomeUsuario.setText(documentSnapshot.getString("nome"));
-                    crm.setText(documentSnapshot.getString("crm"));
                     emailUsuario.setText(email);
                 }
             }
@@ -66,7 +64,6 @@ public class TelaPrincipalProfissional extends AppCompatActivity {
     private void IniciarComponentes(){
         nomeUsuario = findViewById(R.id.textNomeUsuario);
         emailUsuario = findViewById(R.id.textEmailUsuario);
-        crm = findViewById(R.id.textCRM);
         bt_deslogar = findViewById(R.id.bt_deslogar);
     }
 }

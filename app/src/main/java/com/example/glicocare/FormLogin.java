@@ -20,11 +20,6 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserInfo;
-import com.google.firebase.firestore.core.Query;
-
-import java.text.Normalizer;
-import java.util.List;
 
 public class FormLogin extends AppCompatActivity {
 
@@ -112,11 +107,11 @@ public class FormLogin extends AppCompatActivity {
         FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
 
         //if(usuarioAtual.getProviderData().contains("crm")){
-            //Intent intent = new Intent(FormLogin.this,TelaPrincipalProfissional.class);
+            //Intent intent = new Intent(FormLogin.this,PerfilProfissional.class);
             //startActivity(intent);
             //finish();
         //}else{
-            Intent intent = new Intent(FormLogin.this,TelaPrincipal.class);
+            Intent intent = new Intent(FormLogin.this, TelaPrincipal.class);
             startActivity(intent);
             finish();
         //}

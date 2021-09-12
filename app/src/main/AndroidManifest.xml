@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GlicoCare">
         <activity
-            android:name=".TelaPrincipalProfissional"
+            android:name=".Help"
+            android:exported="true" />
+        <activity
+            android:name=".TelaPrincipal"
+            android:exported="true" />
+        <activity
+            android:name=".PerfilProfissional"
             android:exported="true" />
         <activity
             android:name=".FormCadastroProfissional"
@@ -19,7 +25,7 @@
             android:name=".FormTipoUsuario"
             android:exported="true" />
         <activity
-            android:name=".TelaPrincipal"
+            android:name=".PerfilPaciente"
             android:exported="true" />
         <activity
             android:name=".FormCadastro"
