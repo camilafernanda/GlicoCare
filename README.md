@@ -54,8 +54,17 @@ O sistema permitirá o monitoramento diário, contínuo e remoto do nível de gl
 
 ![Tela de Cadastro do profissional de saúde GlicoCare.](https://user-images.githubusercontent.com/37356058/132269051-9477f095-b122-44bd-b6b9-4cbbda848a16.png)
 
-**Tela Principal Usuário:**
+**Tela Principal:**
+  
+![Tela principal GlicoCare](https://user-images.githubusercontent.com/37356058/132966528-b581fb79-4310-42c0-b42b-b787af0fa332.png)
+  
+**Usuário:**
 
 ![Tela de Usuário GlicoCare.](https://user-images.githubusercontent.com/37356058/131255822-0333b313-6d68-45ef-aaa7-22c21a07aee9.png)
+
+**Help:**
+  
+![Tela help GlicoCare](https://user-images.githubusercontent.com/37356058/132966544-dc851842-05d3-4d99-9bbb-af4bcb3d3396.png)
+
 </div>
 
