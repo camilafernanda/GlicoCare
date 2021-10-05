@@ -69,11 +69,11 @@ O sistema permitirá o monitoramento diário, contínuo e remoto do nível de gl
 
 ###
 
-## 📁 Acesso ao projeto
+## Acesso ao projeto
 
 Você pode [acessar o código fonte do projeto](https://github.com/camilafernanda/GlicoCare) ou [baixá-lo](https://github.com/camilafernanda/GlicoCare/archive/refs/heads/main.zip).
 
-## 🛠️ Abrir e rodar o projeto
+## Abrir e rodar o projeto
 
 Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tela de launcher clique em:
 
