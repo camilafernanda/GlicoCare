@@ -12,6 +12,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -21,6 +23,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class TelaPrincipal extends AppCompatActivity {
 
+    private ImageButton bt_glicose, bt_alimentacao, bt_medicacao, bt_peso, bt_atividade, bt_insulina;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,16 @@ public class TelaPrincipal extends AppCompatActivity {
 
         ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF6347")));
+        IniciarComponentes();
+
+        bt_glicose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,Glicose.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override
@@ -47,7 +61,6 @@ public class TelaPrincipal extends AppCompatActivity {
                 TelaHelp();
                 return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -62,6 +75,15 @@ public class TelaPrincipal extends AppCompatActivity {
     private void TelaHelp(){
         Intent intent = new Intent(TelaPrincipal.this, Help.class);
         startActivity(intent);
+    }
+
+    private void IniciarComponentes(){
+        bt_glicose = findViewById(R.id.bt_glicose);
+        bt_alimentacao = findViewById(R.id.bt_food);
+        bt_medicacao = findViewById(R.id.bt_med);
+        bt_peso = findViewById(R.id.bt_peso);
+        bt_atividade = findViewById(R.id.bt_sports);
+        bt_insulina = findViewById(R.id.bt_insulina);
     }
 
 }

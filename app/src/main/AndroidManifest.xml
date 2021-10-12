@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GlicoCare">
         <activity
+            android:name=".Glicose"
+            android:exported="true" />
+        <activity
             android:name=".Help"
             android:exported="true" />
         <activity

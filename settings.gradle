@@ -1,9 +1,12 @@
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven { url "https://maven.xyz.com" }
+        maven { url "https://maven.testfairy.com" }
+        maven { url "https://jcenter.bintray.com" }
     }
 }
 rootProject.name = "GlicoCare"
