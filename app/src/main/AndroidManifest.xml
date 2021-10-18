@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GlicoCare">
         <activity
+            android:name=".FormGlicose"
+            android:exported="true" />
+        <activity
+            android:name=".FormInsulina"
+            android:exported="true" />
+        <activity
+            android:name=".FormPeso"
+            android:exported="true" />
+        <activity
+            android:name=".FormExercicios"
+            android:exported="true" />
+        <activity
+            android:name=".FormMedicacao"
+            android:exported="true" />
+        <activity
+            android:name=".FormAlimentacao"
+            android:exported="true" />
+        <activity
             android:name=".Glicose"
             android:exported="true" />
         <activity

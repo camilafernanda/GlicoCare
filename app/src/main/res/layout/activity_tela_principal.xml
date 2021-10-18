@@ -222,5 +222,35 @@
         app:layout_constraintStart_toStartOf="@id/containerComponents"
         app:layout_constraintEnd_toEndOf="@id/containerComponents"/>
 
+    <ImageButton
+        android:id="@+id/bt_grafico"
+        style="@style/ContainerComponents"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_stats"
+        app:layout_constraintEnd_toEndOf="@+id/bt_peso"
+        app:layout_constraintStart_toStartOf="@id/bt_sports"
+        app:layout_constraintTop_toBottomOf="@id/title_afericoes"
+         />
+
+    <ImageButton
+        android:id="@+id/bt_download"
+        style="@style/ContainerComponents"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_download"
+        app:layout_constraintEnd_toEndOf="@+id/bt_sports"
+        app:layout_constraintStart_toStartOf="@id/bt_insulina"
+        app:layout_constraintTop_toBottomOf="@id/title_afericoes"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

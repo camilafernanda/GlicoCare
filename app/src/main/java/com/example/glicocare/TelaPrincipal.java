@@ -23,7 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class TelaPrincipal extends AppCompatActivity {
 
-    private ImageButton bt_glicose, bt_alimentacao, bt_medicacao, bt_peso, bt_atividade, bt_insulina;
+    private ImageButton bt_glicose, bt_alimentacao, bt_medicacao, bt_peso, bt_atividade, bt_insulina, bt_download, bt_grafico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,56 @@ public class TelaPrincipal extends AppCompatActivity {
         bt_glicose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormGlicose.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_alimentacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormAlimentacao.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_medicacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormMedicacao.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_peso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormPeso.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_atividade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormExercicios.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_insulina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaPrincipal.this,FormInsulina.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_grafico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent(TelaPrincipal.this,Glicose.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -84,6 +131,8 @@ public class TelaPrincipal extends AppCompatActivity {
         bt_peso = findViewById(R.id.bt_peso);
         bt_atividade = findViewById(R.id.bt_sports);
         bt_insulina = findViewById(R.id.bt_insulina);
+        bt_download = findViewById(R.id.bt_download);
+        bt_grafico = findViewById(R.id.bt_grafico);
     }
 
 }

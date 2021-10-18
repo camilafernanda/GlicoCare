@@ -5,9 +5,15 @@
       <map>
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/drawable/ic_blood.xml" value="0.2203125" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/drawable/ic_help.xml" value="0.2203125" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_alimentacao.xml" value="0.1" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_cadastro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_cadastro_profissional.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_exercicios.xml" value="0.1" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_glicose.xml" value="0.1" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_insulina.xml" value="0.1" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_login.xml" value="0.25" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_medicacao.xml" value="0.18" />
+        <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_peso.xml" value="0.33" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_form_tipo_usuario.xml" value="0.2" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_glicose.xml" value="0.25" />
         <entry key="..\:/Users/Camila Fernanda/AndroidStudioProjects/GlicoCare/app/src/main/res/layout/activity_help.xml" value="0.20416666666666666" />
