@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,34 +7,53 @@
     android:background="@drawable/background"
     tools:context=".FormPeso">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp">
+        android:text="Insira sua medida de peso"
+        android:textSize="25sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <EditText
-        android:layout_width="0dp"
-        android:layout_weight="5"
-        android:layout_height="wrap_content"
         android:id="@+id/edit_peso"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_weight="6"
+        android:layout_marginTop="10dp"
         android:gravity="center"
+        android:hint="Insira sua última medição"
         android:inputType="number"
-        android:hint="Insira o valor do peso medido"/>
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:layout_width="0dp"
         android:layout_weight="2"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="35dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/blue"
         android:text="Adicionar"
-        android:id="@+id/bt_adicionar"/>
-    </LinearLayout>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/list"
+        android:id="@+id/bt_adicionar"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/edit_peso"
         />
 
-</LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        app:layout_constraintTop_toBottomOf="@id/bt_adicionar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

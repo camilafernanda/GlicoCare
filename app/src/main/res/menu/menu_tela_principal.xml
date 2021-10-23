@@ -19,12 +19,12 @@
         android:orderInCategory="200"
     />
 
-    <item
+    <!--<item
         android:id="@+id/itemChat"
         android:title="Chat"
         android:icon="@drawable/ic_chat"
         app:showAsAction="ifRoom"
         android:orderInCategory="300"
-    />
+    /> -->
 
 </menu>

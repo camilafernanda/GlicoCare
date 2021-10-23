@@ -7,4 +7,95 @@
     android:background="@drawable/background"
     tools:context=".FormGlicose">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira sua taxa de glicose"
+        android:textSize="25sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title_aut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira via Bluetooth"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/bt_bluetooh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Verificar e ativar Bluetooth"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/title_aut"/>
+
+    <TextView
+        android:id="@+id/title_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ou insira manualmente"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_bluetooh"
+        />
+
+    <EditText
+        android:id="@+id/edit_glico"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_weight="6"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Insira aqui a medida feita"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/title_man"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Adicionar"
+        android:id="@+id/bt_adicionar"
+        app:layout_constraintTop_toBottomOf="@id/title_man"
+        app:layout_constraintLeft_toRightOf="@id/edit_glico"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        app:layout_constraintTop_toBottomOf="@id/bt_adicionar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

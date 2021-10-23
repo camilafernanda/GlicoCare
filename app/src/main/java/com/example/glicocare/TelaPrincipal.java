@@ -14,12 +14,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class TelaPrincipal extends AppCompatActivity {
 
@@ -37,7 +34,7 @@ public class TelaPrincipal extends AppCompatActivity {
         bt_glicose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaPrincipal.this,FormGlicose.class);
+                Intent intent = new Intent(TelaPrincipal.this, FormGlicose.class);
                 startActivity(intent);
             }
         });

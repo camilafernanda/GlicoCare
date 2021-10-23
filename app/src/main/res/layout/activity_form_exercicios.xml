@@ -7,4 +7,53 @@
     android:background="@drawable/background"
     tools:context=".FormExercicios">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira sua última atividade física"
+        android:textSize="25sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_sports"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_weight="6"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Insira sua atividade física"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Adicionar"
+        android:id="@+id/bt_adicionar"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/edit_sports"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        app:layout_constraintTop_toBottomOf="@id/bt_adicionar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
