@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1068560423550",
+    "firebase_url": "https://glicocare-default-rtdb.firebaseio.com",
     "project_id": "glicocare",
     "storage_bucket": "glicocare.appspot.com"
   },
